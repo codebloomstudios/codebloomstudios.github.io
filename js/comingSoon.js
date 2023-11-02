@@ -1,3 +1,5 @@
+let launchDate = "Nov 10 2023 12:09:39 GMT+0530";
+
 $(window).load(function(){
      $('.preloader').fadeOut('slow');
 });
@@ -46,6 +48,7 @@ function initializeSite() {
 -------------------------------------------------------------- */
 $(window).load(function(){
 
+
 	initializeSite();
 	(function() {
 		setTimeout(function(){window.scrollTo(0,0);},0);
@@ -56,7 +59,7 @@ $(window).load(function(){
 
 
 $('#countdown').countdown({
-	date: "Nov 10 2023",
+	date: launchDate,
 	render: function(data) {
 	  var el = $(this.el);
 	  el.empty()
