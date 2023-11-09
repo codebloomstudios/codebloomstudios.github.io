@@ -5,10 +5,6 @@ if (new Date() < new Date(launchDate)) {
     window.location.href = './comingSoon/comingSoon.html';
 }
 else {
-    // const emptyDiv = document.getElementById("bodyContent");
-    // emptyDiv.remove();
-    // const emptyJs = document.getElementById("bodyJs");
-    // emptyJs.remove();
     console.log("website RELEASED");
 }
 
