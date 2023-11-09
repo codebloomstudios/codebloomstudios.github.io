@@ -1,6 +1,5 @@
-let launchDate = "Nov 10 2023 12:00:00 GMT+0530";
-// let launchDate = "Nov 09 2023 20:52:00 GMT+0530";
-// import {launchDate} from "../../js/index"
+let launchDate = "Nov 14 2023 00:00:00 GMT+0530";
+
 $(window).load(function () {
 	$('.preloader').fadeOut('slow');
 });
@@ -57,7 +56,7 @@ $(window).load(function () {
 
 	if (new Date() > new Date(launchDate)) {
 		console.log("not released yet");
-		window.location.href = '/index.html';
+		window.location.replace = '/index.html';
 	}
 	})();
 
@@ -75,5 +74,12 @@ $('#countdown').countdown({
 			.append("<div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div>")
 			.append("<div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div>")
 			.append("<div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+
+			if (data.days === 0 && data.hours === 0 && data.min === 0 && data.sec === 0) {
+				// Redirect to another page
+				console.log("timer Up");
+				window.location.replace('/index.html');
+				console.log("page redirected");
+			  }
 	}
 });
