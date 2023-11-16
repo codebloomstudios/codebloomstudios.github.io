@@ -6,5 +6,6 @@ if (new Date() < new Date(launchDate)) {
     window.location.href = './comingSoon/comingSoon.html';
 }
 
-else {console.log("website RELEASED");
+else {console.log("website RELEASED");}
+
 document.export = {launchDate}
