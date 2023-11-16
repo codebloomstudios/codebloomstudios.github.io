@@ -1,4 +1,5 @@
-let launchDate = "Nov 14 2023 00:00:00 GMT+0530";
+// let launchDate = "Nov 14 2023 00:00:00 GMT+0530";
+let launchDate = new Date(Date.now() + (5 * 1000));
 
 $(window).load(function () {
 	$('.preloader').fadeOut('slow');
