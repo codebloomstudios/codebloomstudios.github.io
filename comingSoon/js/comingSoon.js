@@ -1,5 +1,5 @@
 // let launchDate = "Nov 14 2023 00:00:00 GMT+0530";
-let launchDate = new Date(Date.now() + (5 * 1000));
+let launchDate = new Date(Date.now() + (60 * 1000));
 
 $(window).load(function () {
 	$('.preloader').fadeOut('slow');
@@ -57,7 +57,7 @@ $(window).load(function () {
 
 	if (new Date() > new Date(launchDate)) {
 		console.log("not released yet");
-		window.location.replace = '/index.html';
+		window.location.replace = '/';
 	}
 	})();
 
@@ -79,7 +79,7 @@ $('#countdown').countdown({
 			if (data.days === 0 && data.hours === 0 && data.min === 0 && data.sec === 0) {
 				// Redirect to another page
 				console.log("timer Up");
-				window.location.replace('/index.html');
+				window.location.replace('/');
 				console.log("page redirected");
 			  }
 	}
