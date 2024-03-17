@@ -3037,7 +3037,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-header {
     --header-height  : 80px;
-    --logo-width     : 40px;
+    --logo-width     : 240px;
     z-index          : 100;
     background-color : transparent;
     height           : var(--header-height);
@@ -3266,7 +3266,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
     .s-header {
-        --logo-width : 36px;
+        --logo-width : 200px;
         top          : var(--vspace-0_25);
     }
 
