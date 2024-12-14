@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>
+        Codebloom Studios
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Core Meta Data -->
+    <meta content="StyleShout" name="author">
+    <meta content="The landing page of Codebloom Studios!" name="description">
+    <meta content="Responsive, Landing Page, One Page" name="keywords"><!-- Open Graph Meta Data -->
+    <meta content="website">
+    <meta content="index.html">
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+    <script src="./js/index.js"></script>
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+
+
+            <!-- T&C
+            ----------------------------------------------- -->
+            <section>
+
+                <textarea id="markdown-input" rows="10" hidden>
+
+# Privacy Policy
+
+## Introduction
+Codebloom Studios ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our website, services, or products. By using our services, you agree to the practices described in this Privacy Policy.
+
+## Information We Collect
+
+### 1. Information You Provide to Us
+- **Personal Information**: Name, email address, phone number, company details, or other information you provide when filling out forms, signing up for services, or contacting us.
+- **Payment Information**: Details required to process payments, such as billing addresses and payment methods.
+
+### 2. Information We Collect Automatically
+- **Usage Data**: Information about your interactions with our website, such as IP address, browser type, device information, and pages visited.
+- **Cookies**: Data collected through cookies and similar technologies to enhance your browsing experience. (See the "Cookies" section for details.)
+
+### 3. Information from Third Parties
+- Information obtained from social media platforms, analytics tools, or partners when you engage with us through those channels.
+
+## How We Use Your Information
+We use your information for the following purposes:
+- To provide, improve, and personalize our services.
+- To process transactions and communicate with you regarding your purchases or projects.
+- To respond to inquiries and provide customer support.
+- To send promotional materials, updates, or newsletters (with your consent).
+- To ensure security, detect fraudulent activities, and comply with legal obligations.
+
+## Sharing Your Information
+We do not sell or rent your personal information. However, we may share your information in the following scenarios:
+- **Service Providers**: With third-party vendors or contractors who perform services on our behalf (e.g., payment processing, hosting).
+- **Legal Compliance**: When required by law or in response to valid legal requests.
+- **Business Transfers**: In connection with a merger, acquisition, or sale of assets.
+
+## Cookies and Tracking Technologies
+Cookies and similar technologies are used to:
+- Enhance your browsing experience.
+- Analyze website traffic and usage patterns.
+- Deliver targeted advertisements.
+
+You can control cookie preferences through your browser settings. Note that disabling cookies may affect the functionality of our website.
+
+## Data Security
+We implement appropriate technical and organizational measures to protect your personal information. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+
+## Data Retention
+We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce agreements.
+
+## Your Rights
+Depending on your jurisdiction, you may have the following rights:
+- Access to your personal data.
+- Correction or deletion of your information.
+- Objection to or restriction of data processing.
+- Portability of your data.
+- Withdrawal of consent for data processing.
+
+To exercise these rights, please contact us at [your email address].
+
+## Third-Party Links
+Our website may include links to third-party sites. We are not responsible for the privacy practices or content of those websites. Please review their privacy policies before providing any personal information.
+
+## Changes to This Privacy Policy
+We may update this Privacy Policy periodically to reflect changes in our practices or applicable laws. The updated version will be posted on this page with a revised "Last Updated" date.
+
+---
+By using our services, you acknowledge that you have read, understood, and agree to this Privacy Policy.
+
+                    
+
+                </textarea>
+
+                <div style="margin: 10%;">
+                    <a href="index.html">Home</a>
+                    <div id="html-output"></div>
+
+                </div>
+
+                <script>
+                    const converter = new showdown.Converter();
+
+                    // Get Markdown input and output containers
+                    const input = document.getElementById('markdown-input');
+                    const output = document.getElementById('html-output');
+
+                    // Convert Markdown to HTML and display it
+                    input.addEventListener('input', () => {
+                        const markdownText = input.value;
+                        output.innerHTML = converter.makeHtml(markdownText);
+                    });
+
+                    // Trigger the conversion initially
+                    input.dispatchEvent(new Event('input'));
+                </script>
+
+
+            </section>
+
+
+
+
+        </section> <!-- end content -->
+
+
+        <!-- Java Script
+    ================================================== -->
+
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

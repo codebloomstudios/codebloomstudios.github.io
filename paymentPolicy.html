@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>
+        Codebloom Studios
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Core Meta Data -->
+    <meta content="StyleShout" name="author">
+    <meta content="The landing page of Codebloom Studios!" name="description">
+    <meta content="Responsive, Landing Page, One Page" name="keywords"><!-- Open Graph Meta Data -->
+    <meta content="website">
+    <meta content="index.html">
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+    <script src="./js/index.js"></script>
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+
+
+            <!-- T&C
+            ----------------------------------------------- -->
+            <section>
+
+                <textarea id="markdown-input" rows="10" hidden>
+
+
+# Payment Policy
+
+## Overview
+At Codebloom Studios, we strive to maintain transparency in our payment processes. This Payment Policy outlines the terms and conditions governing payments for our services and products. By engaging with us, you agree to comply with this policy.
+
+## Payment Terms
+
+### 1. Service Fees
+- All service fees are as stated in the project agreement or on our website. These fees are subject to change based on the scope of work or additional requirements.
+
+### 2. Invoicing
+- Invoices will be issued for services rendered. Payment is required within the timeframe specified in the invoice.
+- Late payments may incur additional fees or penalties as outlined in the project agreement.
+
+### 3. Accepted Payment Methods
+We accept the following payment methods:
+- Bank transfers
+- Credit/Debit cards
+- Other methods as agreed upon during project discussions
+
+## Work Commencement
+- Work will begin only after timely payments are made as per the agreed terms. Delayed payments may lead to rescheduling of project timelines.
+
+## Refund Policy
+- Refunds are not available for services such as development, design, consultation, or courses.
+- For courses, while refunds are not currently offered, we are working towards introducing flexible options in the future.
+
+## Additional Costs
+- Any additional costs incurred during the course of the project, such as third-party tools, software, or subscriptions, will be communicated and billed separately with prior approval.
+
+## Disputes and Resolutions
+- In case of payment disputes, we encourage clients to contact us at [your email address]. We will work to resolve the issue amicably.
+
+
+
+---
+By making payments to Codebloom Studios, you acknowledge that you have read, understood, and agree to this Payment Policy.
+
+                    
+
+
+
+                </textarea>
+
+                <div style="margin: 10%;">
+                    <a href="index.html">Home</a>
+                    <div id="html-output"></div>
+
+                </div>
+
+                <script>
+                    const converter = new showdown.Converter();
+
+                    // Get Markdown input and output containers
+                    const input = document.getElementById('markdown-input');
+                    const output = document.getElementById('html-output');
+
+                    // Convert Markdown to HTML and display it
+                    input.addEventListener('input', () => {
+                        const markdownText = input.value;
+                        output.innerHTML = converter.makeHtml(markdownText);
+                    });
+
+                    // Trigger the conversion initially
+                    input.dispatchEvent(new Event('input'));
+                </script>
+
+
+            </section>
+
+
+
+
+        </section> <!-- end content -->
+
+
+        <!-- Java Script
+    ================================================== -->
+
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

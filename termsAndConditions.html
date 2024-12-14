@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>
+        Codebloom Studios
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Core Meta Data -->
+    <meta content="StyleShout" name="author">
+    <meta content="The landing page of Codebloom Studios!" name="description">
+    <meta content="Responsive, Landing Page, One Page" name="keywords"><!-- Open Graph Meta Data -->
+    <meta content="website">
+    <meta content="index.html">
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+    <script src="./js/index.js"></script>
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+
+
+            <!-- T&C
+            ----------------------------------------------- -->
+            <section>
+
+                <textarea id="markdown-input" rows="10" hidden>
+
+# Terms and Conditions of Services
+
+## Introduction
+
+Welcome to Codebloom Studios. By accessing or using our website, services, or products, you agree to be bound by these Terms and Conditions. If you do not agree to any part of these terms, you should not use our website or services.
+
+## Definitions
+
+- **"Company"** refers to Codebloom Studios.
+- **"Services"** refers to all products, services, and offerings provided by the Company.
+- **"User"** or **"You"** refers to anyone who accesses or uses our website or services.
+- **"Content"** refers to all text, images, data, software, and other materials provided on the website or through our services.
+
+## Use of Our Services
+
+1. **Eligibility**: You must be at least 18 years old or have the permission of a legal guardian to use our services.
+2. **License**: We grant you a limited, non-exclusive, and revocable license to access and use our website and services for personal or commercial purposes in accordance with these Terms.
+3. **Restrictions**:
+    - Do not misuse our services by attempting to access unauthorized areas, distribute harmful content, or violate applicable laws.
+    - Refrain from using automated systems to extract data or interact with our website or services.
+
+## Intellectual Property
+
+All content on this website, including but not limited to text, graphics, logos, and code, is the property of Codebloom Studios or its licensors. Unauthorized use, reproduction, or distribution is prohibited.
+
+## Third-Party Links
+
+Our website may contain links to third-party websites. Codebloom Studios is not responsible for the content, privacy policies, or practices of third-party sites. Access these links at your own risk.
+
+## Privacy Policy
+
+Your use of our services is also governed by our [Privacy Policy](privacyPolicy.html), which outlines how we collect, use, and protect your data.
+
+## Payment Terms
+
+1. **Fees**: Prices for services or products are as stated on our website or in project agreements.
+2. **Payment Methods**: Payments can be made through the accepted methods indicated on our website or invoicing system.
+3. **Refund Policy**: There are no refunds available for services including but not limited to development, design, consultation, or courses. Work on projects will commence only after timely payments are made. For courses, while refunds are not currently offered, we aim to introduce flexible options in the future.
+4. **Learn More:** Read more about our [Payment Policy](paymentPolicy.html) for further details.
+## Limitation of Liability
+
+Codebloom Studios is not liable for any direct, indirect, incidental, or consequential damages arising from the use of our website, services, or inability to access them.
+
+## Indemnification
+
+You agree to indemnify and hold harmless Codebloom Studios, its affiliates, employees, and agents from any claims, damages, or expenses arising out of your use of our website or services.
+
+## Changes to Terms and Conditions
+
+Codebloom Studios reserves the right to update or modify these Terms and Conditions at any time without prior notice. Continued use of the website or services after changes constitutes acceptance of the revised terms.
+
+## Termination
+
+We reserve the right to suspend or terminate access to our website or services at our sole discretion if these Terms and Conditions are violated.
+
+## Governing Law
+
+These Terms and Conditions are governed by and construed in accordance with the laws of Karnataka India. Any disputes shall be resolved in the courts of Karnataka India.
+
+
+---
+
+By using our services, you acknowledge that you have read, understood, and agree to these Terms and Conditions.      
+
+                </textarea>
+
+                <div style="margin: 10%;">
+                    <a href="index.html">Home</a>
+                    <div id="html-output"></div>
+
+                </div>
+
+                <script>
+                    const converter = new showdown.Converter();
+
+                    // Get Markdown input and output containers
+                    const input = document.getElementById('markdown-input');
+                    const output = document.getElementById('html-output');
+
+                    // Convert Markdown to HTML and display it
+                    input.addEventListener('input', () => {
+                        const markdownText = input.value;
+                        output.innerHTML = converter.makeHtml(markdownText);
+                    });
+
+                    // Trigger the conversion initially
+                    input.dispatchEvent(new Event('input'));
+                </script>
+
+
+            </section>
+
+
+
+
+        </section> <!-- end content -->
+
+
+        <!-- Java Script
+    ================================================== -->
+
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
