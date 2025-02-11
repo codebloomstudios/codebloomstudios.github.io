@@ -4,6 +4,9 @@
 Below are the available logo files in the `/logos` directory:
 
 ## Logos for Different Backgrounds
+the links to the logo start like this
+[https://codebloomstudios.com/images/logos](https://codebloomstudios.com/images/logos) followed by the file name
+
 
 ###  Logos PNGs
 | Logo | Filename |
